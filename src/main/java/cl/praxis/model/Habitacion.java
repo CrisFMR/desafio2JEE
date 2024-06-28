@@ -10,9 +10,11 @@ public class Habitacion {
 	private int habitaciones;
 	private int metraje;
 
+	//--Contructor Void--
 	public Habitacion() {
 	}
-
+	
+	//--Constructor with Fields--
 	public Habitacion(int id, String nombre, String descripcion, String imagen, String email, int precio,
 			int habitaciones, int metraje) {
 		super();
@@ -26,6 +28,7 @@ public class Habitacion {
 		this.metraje = metraje;
 	}
 
+	//--Getters & Setters
 	public int getId() {
 		return id;
 	}

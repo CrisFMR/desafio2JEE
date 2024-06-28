@@ -5,9 +5,10 @@ import java.util.List;
 public class HabitacionBusiness {
 	public List<Habitacion> getHabitaciones() {
 		
+		//--Creación ArrayList--
 		ArrayList<Habitacion> habitacion = new ArrayList<Habitacion>();
 		
-		//Habitacion 1
+		//--Habitacion 1--
 		Habitacion habitacion1 = new Habitacion();
 		habitacion1.setId(1);
 		habitacion1.setNombre("Simple");
@@ -16,7 +17,7 @@ public class HabitacionBusiness {
 		habitacion1.setPrecio(10000);
 		habitacion1.setHabitaciones(1);
 		habitacion1.setMetraje(10);
-		//Habitacion 2
+		//--Habitacion 2--
 		Habitacion habitacion2 = new Habitacion();
 		habitacion2.setId(2);
 		habitacion2.setNombre("Doble Simple");
@@ -25,7 +26,7 @@ public class HabitacionBusiness {
 		habitacion2.setPrecio(20000);
 		habitacion2.setHabitaciones(2);
 		habitacion2.setMetraje(12);
-		//Habitacion 3
+		//--Habitacion 3--
 		Habitacion habitacion3 = new Habitacion();
 		habitacion3.setId(3);
 		habitacion3.setNombre("Doble Normal");
@@ -34,7 +35,7 @@ public class HabitacionBusiness {
 		habitacion3.setPrecio(30000);
 		habitacion3.setHabitaciones(3);
 		habitacion3.setMetraje(15);
-		//Habitacion 4
+		//--Habitacion 4--
 		Habitacion habitacion4 = new Habitacion();
 		habitacion4.setId(4);
 		habitacion4.setNombre("Doble King");
@@ -43,7 +44,7 @@ public class HabitacionBusiness {
 		habitacion4.setPrecio(40000);
 		habitacion4.setHabitaciones(4);
 		habitacion4.setMetraje(18);
-		//Habitación 5
+		//--Habitación 5--
 		Habitacion habitacion5 = new Habitacion();
 		habitacion5.setId(5);
 		habitacion5.setNombre("Doble King");
@@ -52,7 +53,7 @@ public class HabitacionBusiness {
 		habitacion5.setPrecio(50000);
 		habitacion5.setHabitaciones(5);
 		habitacion5.setMetraje(20);
-		//Habitación 6
+		//--Habitación 6--
 		Habitacion habitacion6 = new Habitacion();
 		habitacion6.setId(6);
 		habitacion6.setNombre("Doble King");
@@ -61,7 +62,7 @@ public class HabitacionBusiness {
 		habitacion6.setPrecio(60000);
 		habitacion6.setHabitaciones(6);
 		habitacion6.setMetraje(25);
-		//Habitación 7
+		//--Habitación 7--
 		Habitacion habitacion7 = new Habitacion();
 		habitacion7.setId(7);
 		habitacion7.setNombre("Doble King");
@@ -70,7 +71,7 @@ public class HabitacionBusiness {
 		habitacion7.setPrecio(70000);
 		habitacion7.setHabitaciones(7);
 		habitacion7.setMetraje(25);
-		//Habitación 8
+		//--Habitación 8--
 		Habitacion habitacion8 = new Habitacion();
 		habitacion8.setId(8);
 		habitacion8.setNombre("Doble King");
@@ -80,7 +81,7 @@ public class HabitacionBusiness {
 		habitacion8.setHabitaciones(8);
 		habitacion8.setMetraje(30);
 		
-		//Creación de lista
+		//--Creación de lista--
 		habitacion.add(habitacion1);
 		habitacion.add(habitacion2);
 		habitacion.add(habitacion3);
@@ -91,12 +92,12 @@ public class HabitacionBusiness {
 		habitacion.add(habitacion8);
 		return habitacion;
 	}
-	  //Metodo para calcular valor
+	  //--Método para calcular valor--
 	public int Valor(int valorHabitacion, int cantidadHabitaciones) {
 		int valor = valorHabitacion * cantidadHabitaciones;
 		return valor;
 		}
-	 
+	 //--Método para obtener habitaciones--
 	public Habitacion getHabitacionbyID(Habitacion habitacion) {
 		List<Habitacion> listaHabitacion = getHabitaciones();
 		for (int i = 0; i < listaHabitacion.size(); i++) {

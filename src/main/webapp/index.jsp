@@ -5,9 +5,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-// Librerias Requeridas
 HabitacionBusiness habitacionBusiness = new HabitacionBusiness();
-// listado de Evento
 List<Habitacion> listaHabitacion = habitacionBusiness.getHabitaciones();
 %>
 <!DOCTYPE html>
@@ -16,7 +14,7 @@ List<Habitacion> listaHabitacion = habitacionBusiness.getHabitaciones();
 <body>
 	<%@include file="assets/html/header.jsp"%>
 	<form method="post" action="procesa.jsp">
-		<!-- Section-->
+		<!--Availability & Cards-->
 		<section class="py-5">
 			<div class="container px-4 px-lg-5 mt-5">
 				<div class="row justify-content-center">
@@ -55,7 +53,7 @@ List<Habitacion> listaHabitacion = habitacionBusiness.getHabitaciones();
 				</div>
 			</div>
 		</section>
-		<!-- Formulario -->
+		<!-- Form & Buttons-->
 		<section>
 			<div class="container px-4 px-lg-5 mt-5">
 				<h1>Información de Reserva</h1>
