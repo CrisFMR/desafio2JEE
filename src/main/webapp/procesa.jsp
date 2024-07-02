@@ -8,7 +8,7 @@ String nombre = request.getParameter("nombre");
 String apellido = request.getParameter("apellido");
 String email = request.getParameter("email");
 String medioPago = request.getParameter("medioPago");
-int cantidadDias = Integer.parseInt(request.getParameter("dias"));
+int nDias = Integer.parseInt(request.getParameter("dias"));
 String fechaEntrada = request.getParameter("fechaEntrada");
 int idHabitacion = Integer.parseInt(request.getParameter("idHabitacion"));
 
@@ -18,7 +18,7 @@ Habitacion habitacion = new Habitacion();
 habitacion.setId(idHabitacion);
 
 habitacion = habitacionBusiness.getHabitacionbyID(habitacion);
-int valorPagar = cantidadDias * habitacion.getPrecio();
+int valorPagar = nDias * habitacion.getPrecio();
 %>
 <!DOCTYPE html>
 <html lang="es">
@@ -69,7 +69,7 @@ int valorPagar = cantidadDias * habitacion.getPrecio();
 						<tr>
 							<th scope="row">5</th>
 							<td>Dias de Reserva</td>
-							<td><%=cantidadDias%></td>
+							<td><%=nDias%></td>
 						</tr>
 						<tr>
 							<th scope="row">6</th>
@@ -93,7 +93,6 @@ int valorPagar = cantidadDias * habitacion.getPrecio();
 				<div class="col-12">
 					<a href="index.jsp" class="btn btn-secondary px-5 py-2">Volver</a>	
 				</div>
-			</section>
 		</section>
 		<br /> <br />
 	</form>

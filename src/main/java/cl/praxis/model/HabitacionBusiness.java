@@ -93,8 +93,8 @@ public class HabitacionBusiness {
 		return habitacion;
 	}
 	  //--Método para calcular valor--
-	public int Valor(int valorHabitacion, int cantidadHabitaciones) {
-		int valor = valorHabitacion * cantidadHabitaciones;
+	public int Valor(int vHabitacion, int nHabitaciones) {
+		int valor = vHabitacion * nHabitaciones;
 		return valor;
 		}
 	 //--Método para obtener habitaciones--

@@ -58,22 +58,26 @@ List<Habitacion> listaHabitacion = habitacionBusiness.getHabitaciones();
 			<div class="container px-4 px-lg-5 mt-5">
 				<h1>Información de Reserva</h1>
 				<hr />
+				<!--First Name -->
 				<div class="row g-3 justify-content-center">
 					<div class="col-md-6">
 						<label for="inputFirstName" class="formlabel">Nombre</label> <input
 							type="text" class="form-control" id="nombre" name="nombre"
 							value="" placeholder="Nelson Alexis" autocomplete="off">
 					</div>
+					<!-- Last Name -->
 					<div class="col-md-6">
 						<label for="inputLastName" class="formlabel">Apellido</label> <input
 							type="text" class="form-control" id="apellido" name="apellido"
 							value="" placeholder="Soto Suarez" autocomplete="off">
 					</div>
+					<!-- Email -->
 					<div class="col-md-6">
 						<label for="inputEmail" class="formlabel">Email</label> <input
 							type="text" class="form-control" id="email" name="email"
 							value="" placeholder="Example@example.com" autocomplete="off">
 					</div>
+					<!-- Payment Type -->
 					<div class="col-md-2">
 						<label for="inputPayment" class="formlabel">Medio de Pago</label> <select
 							name="medioPago" id="medioPago" class=form-select>
@@ -85,6 +89,7 @@ List<Habitacion> listaHabitacion = habitacionBusiness.getHabitaciones();
 							<option value="Efectivo">Efectivo</option>
 						</select>
 					</div>
+					<!-- Reserved Days -->
 					<div class="col-md-4">
 						<label for="inputDays" class="formlabel">Días</label> <select
 							id="dias" name="dias" class="form-select">
@@ -98,6 +103,7 @@ List<Habitacion> listaHabitacion = habitacionBusiness.getHabitaciones();
 							%>
 						</select>
 					</div>
+					<!-- Enter Day -->
 					<div class="col-md-2">
 						<label for="inputEnterDay" class="formlabel">Fecha de
 							entrada</label> <select id="fechaEntrada" name="fechaEntrada" class="form-select">
@@ -120,6 +126,7 @@ List<Habitacion> listaHabitacion = habitacionBusiness.getHabitaciones();
 					
 					<div class="col-12 d-flex justify-content-center">
 						<hr>
+						<!-- Send Button -->
 						<button type="submit" class="btn btn-secondary px-2 py-3">Enviar
 							Solicitud de Reserva</button>
 					</div>

@@ -4,7 +4,7 @@
 <body>
 	<%@include file="assets/html/header.jsp"%>
 	<form method="post" action="procesa.jsp">
-		<!-- Section-->
+		<!-- Section Validation Page -->
 		<section class="py-5">
 			<div class="container px-4 px-lg-5 my-5 text-center">
 				<div class="row justify-content-center">
