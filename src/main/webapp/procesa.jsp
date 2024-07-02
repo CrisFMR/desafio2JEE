@@ -4,6 +4,7 @@
 	pageEncoding="UTF-8"%>
 <%
 
+//Variables
 String nombre = request.getParameter("nombre");
 String apellido = request.getParameter("apellido");
 String email = request.getParameter("email");
@@ -13,7 +14,6 @@ String fechaEntrada = request.getParameter("fechaEntrada");
 int idHabitacion = Integer.parseInt(request.getParameter("idHabitacion"));
 
 HabitacionBusiness habitacionBusiness = new HabitacionBusiness();
-
 Habitacion habitacion = new Habitacion();
 habitacion.setId(idHabitacion);
 
@@ -26,7 +26,7 @@ int valorPagar = nDias * habitacion.getPrecio();
 <body>
 	<%@include file="assets/html/header.jsp"%>
 	<form method="post" action="procesa.jsp">
-		<!-- Section-->
+		<!-- Section Formulary Data -->
 		<section class="py-4 ">
 			<div class="container px-4 px-lg-5 mt-5">
 				<div class="row justify-content-center">
@@ -84,6 +84,7 @@ int valorPagar = nDias * habitacion.getPrecio();
 					</tbody>
 				</table>
 			</div>
+			<!-- Buttons Nav -->
 			<section class="container d-flex justify-content-center">
 			<div class="colum pt-4 pb-4 text-center ">
 				<div class="col-12">
